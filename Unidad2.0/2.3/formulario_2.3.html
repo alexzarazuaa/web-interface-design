@@ -13,19 +13,47 @@
         <fieldset>
             <legend>Datos Básicos</legend>
 
-            <label>Nombre</label>
+            <label for="Nombre">Nombre</label>
             <br>
-            <input type="text" name="Nombre">
-            <br>
-            <br>
-            <label>Descripcion</label>
-            <br>
-            <textarea rows="4" cols="20"></textarea>
+            <input type="text" id="Nombre" name="Nombre">
             <br>
             <br>
-            <label>Foto</label>
-            <input type="text">
+            <label for="descripcion">Descripcion</label>
+            <br>
+            <textarea rows="4" name="textarea"></textarea>
+            <br>
+            <br>
+            <label for="foto">Foto</label>
+            <input type="file" id="foto" name="foto">
+            <br>
+            <br>
+            <input type="checkbox" id="count" value="count"><label for="count">Añadir contador de visitas</label>
 
+        </fieldset>
+        <fieldset>
+            <legend>Datos económicos</legend>
+            <label for="price">Precio</label>
+            <input type="text" id="price" name="price" size="4"> € &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="impuestos">Impuestos</label>
+            <select name="porcentaje" size="1">
+                <option value="4">4%</option>
+                <option value="7">7%</option>
+                <option value="16">16%</option>
+                <option value="25">25%</option>
+            </select>
+            <br>
+            <br>
+            <label for="promotions">Promoción</label>
+            <br>
+            <input type="radio" name="promotions" id="ninguno" value="ninguno">
+            <label for="ninguno">Ninguno</label>
+            <br>
+            <input type="radio" name="promotions" id="gratuito" value="gratuito">
+            <label for="gratuito">Transporte gratuito</label>
+            <br>
+            <input type="radio" name="promotions" id="descuento" value="descuento">
+            <label for="descuento">Descuento 5%</label>
+            <br><br>
         </fieldset>
 
     </form>
