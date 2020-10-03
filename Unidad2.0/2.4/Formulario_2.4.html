@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario 2.4</title>
+</head>
+
+<body>
+
+    <form>
+        <label for="Nombre completo"> Nombre completo:</label>
+        </br>
+        <input type="text" id="nombre completo" name="nombre completo" placeholder="Jane Doe" required/>
+        <br>
+        <br>
+
+        <label for="mail">Dirección de correo electrónico: </label>
+        </br>
+        <input type="text" id="mail" name="mail" pattern=“^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$” required/>
+        <br>
+        <br>
+
+        <label for="repeatMail">Repite la dirección de correo electrónico:  </label>
+        </br>
+        <input type="text" id="repeatMail" name="repeatMail" pattern=“^[_a-z0-9-]+(.[_a-z0-9-]+)*@[a-z0-9-]+(.[a-z0-9-]+)*(.[a-z]{2,4})$” required/>
+        <br>
+        <br>
+
+
+        <label for="fechaLlegada">Fecha de llegada:</label>
+        </br>
+        <input type="date" id="fechaLlegada" name="fechaLlegada" required/>
+        <br>
+        <br>
+
+
+        <label for="noches">Número de noches (99,00 USD por habitación y noche):</label>
+        </br>
+        <input type="number" min="1" step="1" id="noches" name="noches" required/>
+        <br>
+        <br>
+
+
+        <label for="personas">Número de personas (10,00 USD por persona adicional y noche):</label>
+
+        </br>
+        <input type="number" min="1" step="1" id="personas" name="personas" required/>
+        <br>
+        <p>Total estimado: 99,00USD</p>
+        <br>
+
+        <label for="codigos"> Codigo promocional:</label>
+        </br>
+        <input type="text" id="codigos" name="codigos" required/>
+        <br>
+        <br>
+
+        <input type="submit" value="Solicitar reserva" id="reserva" name="reserva" />
+
+    </form>
+</body>
+
+</html>
