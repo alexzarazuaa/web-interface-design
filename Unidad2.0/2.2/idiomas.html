@@ -5,26 +5,33 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Idiomas</title>
+    <meta property="og:title" content="Idiomas" />
+    <meta name="description" content="Página en relación a los idimoas" />
+    <meta name="language" content="ES">
 </head>
 
-<body>
+
+<body itemscope itemtype="https://schema.org/WebPage">
 
 
-    <header>
-        <h1>Idiomas</h1>
-    </header>
+
+    <h1 itemprop="idiomas">Idiomas</h1>
+
     <hr>
     <blockquote>
         <main>
-            <section>
-                <article>
-                    <h3><strong>Inglés</strong></h3>
-                    <ul>
-                        <li>Oral : Nivel Medio</li>
-                        <li>Escrito : Nivel Medio</li>
-                        <li>Compresión : Nivel Medio</li>
-                    </ul>
-            </section>
+
+            <div itemprop="info">
+                <h3 itemprop="idioma">Inglés
+                </h3>
+                <ul itemprop="lista nivel">
+                    <li itemprop="nivel oral">Oral : Nivel Medio</li>
+                    <li itemprop="nivel Escrito">Escrito : Nivel Medio</li>
+                    <li itemprop="nivel Compresión">Compresión : Nivel Medio</li>
+                </ul>
+            </div>
+
+
         </main>
     </blockquote>
 </body>
