@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="Actividad 2.7" />
+    <meta name="description" content="Actividad opcional datalist and autofocus" />
+    <meta name="language" content="ES">
+    <title>Actividad 2.7</title>
+</head>
+<body>
+    <h1>Actividad 2.7</h1>
+    <article>
+        <h2>Elemento : <em>datalist</em></h2>
+        <p>
+            El elemento Datalist representa una lista de opciones predefinidas que pueden ser utilizadas para proveer sugerencias en muchos controles de formularios.
+        </p>
+        <h3>Les muestro un Ejemplo:</h3>
+        <label for="canciones">Escoge una cancion:</label>
+        <input list="canciones" name="cancion" id="cancion">
+        <datalist id="canciones">
+            <option value="La Manta al coll">
+            <option value="La Tarara">
+            <option value="Así me gusta a mí">
+        </datalist>
+    </article>
+
+    <article>
+        <h2>Atributo : <em>multiple</em></h2>
+        <p>
+            Gracias al atributo multiple podemos Seleccionar varios archivos o emails en formularios, además es compatible con los input de tipo file o email.
+        </p>
+        <h3>Por ejemplo:</h3>
+        <input type="file" name="files" multiple="multiple" /><br><br>
+        <input type="email" name="mails" multiple="multiple" />
+    </article>
+
+    <article>
+        <h2>Atributo :  <em>autofocus</em></h2>
+        <p>
+            Gracias este atributo podemos poner el cursor de manera activa en un input del formulario sin la  necesidad de hacer click en él.
+        </p>
+        <h3>Por ejemplo:</h3>
+        <input type="text" placeholder="Autofocus" name="autofocus" autofocus/>
+    </article>
+
+</body>
+</html>
