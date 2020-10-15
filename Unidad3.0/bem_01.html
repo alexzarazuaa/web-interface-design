@@ -16,24 +16,30 @@
 
 <body>
     <div itemscope itemtype="http //schema.org/webpage">
-        <header>
+
+        <!-- Ojo que el header es un bloque -->
+        <header class="cabecera">
+            <nav  class="cabecera__menu">
+            </nav>
         </header>
 
-        <nav>
-        </nav>
 
-        <section>
-            <article>
-                <h2></h2>
-                <img>
-                <p></p>
+        <!-- Ojo que el Section es un bloque -->
+        <section class="cuerpo">
+            <article class="cuerpo__articulo">
+                <h2 itemprop="titulo" class="cuerpo__articulo__titulo">TITULO DEL ARTICULO</h2>
+                <img class="cuerpo__articulo__imagen">
+                <p  itemprop="piedefoto" class="cuerpo_articulo_pieDeFoto"></p>
             </article>
         </section>
-        <aside>
+
+        <!-- Ojo que el Section es un bloque -->
+        <aside class="lateralDerecha">
 
         </aside>
 
-        <footer></footer>
+        <!-- Ojo que el Footer es un bloque -->
+        <footer class="footerPagina"></footer>
 
     </div>
 </body>
