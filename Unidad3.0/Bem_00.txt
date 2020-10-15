@@ -1,0 +1,29 @@
+						BEM 00
+-------------------------------------------------------------------------------------------------------------------------------------						
+Acceda a las guías de estilo de los siguientes sitios web y realiza una lista de los elementos comunes que reflejan todas ellas.
+
+
+UNIVERSIDAD DE ALICANTE 
+------------------------------------
+
+-Recomendaciones generales : para la elaboración de páginas Web y que han servido de base tanto a la hora del diseño
+ del Web corporativo de la Universidad de Alicante :
+
+*La inclusión de objetos JAVA, multimedia o de objetos que necesitan conectores para poder ser activados, 
+puede impedir la visualización correcta de la página y sólo deberían utilizarse en casos imprescindibles. 
+
+*La inclusión de gráficos debe valorarse en relación a los tiempos de carga que serían necesarios si el acceso a la página se realiza a través de conexiones de baja velocidad. 
+
+*En este mismo sentido y para favorecer una lectura cómoda de la página, no conviene que el contenido de la página sea muy extenso, siendo el caso mas favorable cuando las páginas pueden ser leídas sin necesidad de utilizar las barras de desplazamiento.
+
+*Si necesita publicar gráficos o ficheros de tamaño considerable, informe de su tamaño en bytes para que el usuario pueda valorar los tiempos de espera.
+
+*La utilización de elementos gráficos comunes a varias páginas, favorece la carga de dichas páginas al aprovechar la caché que incorporan los visores.
+*Los documentos cuyo acceso esté restringido a los miembros de la comunidad universitaria se señalarán con un icono especial (icono-candado)
+*Deberán evitarse el acceso a las páginas que contengan "...En construcción".
+*Así mismo compruebe sus páginas para evitar los errores del tipo "...File not found" y revise periódicamente los enlaces que aparezcan en las mismas.
+*Tenga en cuenta que muchos usuarios pueden guardar en sus marcadores cualquier tipo de página, por lo que éstas deben estar perfectamente identificadas como páginas pertenecientes a la Universidad.
+*La mayoría de los buscadores utilizan la información descrita en el "Título", "Descripción" y "Palabras clave". Siga las recomendaciones que aparecen en la Guía de publicación de páginas web en VUALÀ.
+*En el caso de publicar documentos del tipo libro electrónico, es muy común proporcionar enlaces que permitan descargar dicho documento en alguno de los formatos más frecuentes (pdf, rtf, ...). Si el tamaño de estos documentos es considerable, se recomienda utilizar algún sistema de compresión.
+*Evite cambiar las URL de sus páginas, tenga en cuenta que algunos visitantes pueden haber anotado dicha dirección en sus marcadores, por lo que posteriores accesos les producirá un mensaje de error. Si fuese inevitable este cambio, mantenga una página con la URL antigua que redireccione a la nueva dirección.
+*Compruebe que su documento no contiene enlaces incorrectos y que se visualiza correctamente con distintos visores y sus diferentes versiones (Mozilla, Explorer,...). También es muy conveniente comprobar el aspecto de la página en distintas plataformas (Windows, Mac, Unix,...) y diversas configuraciones del cliente (800x600, 640x480,color 16 bits, 24 bits,...)
