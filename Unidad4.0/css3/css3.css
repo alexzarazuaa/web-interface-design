@@ -1,0 +1,34 @@
+.note {
+    background-color: AliceBlue;
+    border: 1px solid #777;
+    box-shadow: 4px 4px 2px #333;
+    margin: 10px;
+    padding: 5px;
+}
+
+body{
+    counter-reset: div p;
+
+}
+
+/*cada primer párrafo de cada sección esté en negrita*/
+section p:first-of-type{
+    font-weight: bold;
+}
+/*La primera letra de cada párrafo deberá de mostrarse de color rojo. */
+p::first-letter{
+    color: red;
+}
+
+/*poder mostrar  anterior el numero de div's /*
+
+/* div::before{
+    counter-increment: div;
+    content: "Div: "counter(div)" - ";
+}
+/*poder mostrar  anterior el numero de p's /*
+
+p::before{
+    counter-increment: p;
+    content: "Párrafo: "counter(p)" - ";
+}   */
