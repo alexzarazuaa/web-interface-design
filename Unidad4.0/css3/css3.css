@@ -20,15 +20,15 @@ p::first-letter{
     color: red;
 }
 
-/*poder mostrar  anterior el numero de div's /*
+/*poder mostrar  anterior el numero de div's */
 
-/* div::before{
+div::before{
     counter-increment: div;
     content: "Div: "counter(div)" - ";
 }
-/*poder mostrar  anterior el numero de p's /*
+/*poder mostrar  anterior el numero de p's */
 
 p::before{
     counter-increment: p;
     content: "Párrafo: "counter(p)" - ";
-}   */
+}  
