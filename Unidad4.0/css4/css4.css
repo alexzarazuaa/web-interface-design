@@ -1,0 +1,30 @@
+/* Ancho en 280px */
+/*  Borde superior e inferior 10 y 15 px respectivamente */
+/* Borde lateral izquierdo 1px y el derecho 5 px */
+/* Color del borde negro  con estilo solido*/
+/*Con un relleno de 15px*/
+
+.box_black{
+    width: 280px;
+    border-width: 10px 15px 5px 1px;
+    border-color: black;
+    border-style: solid;
+    padding: 15px;
+}
+
+
+/* Ancho en 280px */
+/*Margen de separacion respecto al anterior box de 20px*/
+/* Borde superior de color rojo y tamaño de 10px como el anterio */
+/* Borde inferior de color verde y tamaño de 7px  */
+/* Borde derecho  de color azul y tamaño de 15px */
+/* Borde izquierdo de color  gris clarito y de 1px de tamaño*/
+
+.box_multicolor{
+    width: 280px;
+    margin-top: 20px;
+    border-top: 10px solid red;
+    border-bottom: 8px solid rgb(21, 255, 0);
+    border-right: 15px solid blue;
+    border-left: 1px solid rgb(153, 153, 153);
+}
