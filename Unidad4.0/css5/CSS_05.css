@@ -1,0 +1,56 @@
+/*
+          border-style: outset;
+          color gray
+*/
+
+
+p{
+    width: 280px;
+}
+.first__border{
+    border-color: grey; 
+    border-top: inset ;
+    border-bottom:   ridge;
+    border-left: inset ;
+    border-right: ridge;
+}
+.second__border{
+
+
+    border-color: gainsboro; 
+    border-top: ridge ;
+    border-bottom:   outset;
+    border-left: outset ;
+    border-right: ridge;
+}
+
+
+.third__border{
+
+    border-style: outset;
+}
+
+.fourth__border{
+    border-style: hidden;
+}
+
+.fifth__border{
+    border-style: dashed;
+}
+.sixth__border{
+    border-style: solid;
+}
+.seventh__border{
+    border-style: hidden;
+}
+.eighth__border{
+    border-style: double;
+}
+
+.nineth__border{
+    border-style: dotted;
+}
+.tenth__border{
+    border-style: inset;
+} 
+
