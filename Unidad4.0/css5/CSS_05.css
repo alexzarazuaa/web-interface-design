@@ -1,7 +1,16 @@
 /*
-          border-style: outset;
-          color gray
+         outset : 
+         hidden : 
+         none : 
+         dashed :
+         solid :
+         double :
+         dotted :
+         inset :
 */
+
+
+
 
 
 p{
@@ -41,7 +50,7 @@ p{
     border-style: solid;
 }
 .seventh__border{
-    border-style: hidden;
+    border-style: none;
 }
 .eighth__border{
     border-style: double;
