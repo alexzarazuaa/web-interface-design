@@ -1,15 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Una casa con CSS</title>
   <style type="text/css">
+    /*
+        Alinear el tejado con la casa, haciendo que coincidan el borde inferior del tejado con el borde superior de la casa.
+        El tejado deberá estar centrado en la casa.
+        Definir una puerta de 80px de alto y 50px de ancho de color marrón y que quede centrada en la casa. 
+        Definir una 'ventana' para cada una de las 2 plantas de la casa (30px x 30px).
+
+    */
     div{
       position: absolute;
       border: solid black 3px;
       padding: 5px;
+    }
+    .pany{
+      top: 40px;
+      border:0px;
     }
 
     div.casa{
@@ -20,23 +32,67 @@
       left:150px;
     }
     div.tejado{
+      bottom: 260px;
+      left: -17px;
       height: 15px;
       width: 330px;
       background-color: purple;
     }
-    .pany{
-      top:60px;
-      border:0px;
+    div.ximenera{
+    	left: 40px;
+    	top: -78px;
+    	height: 45px;
+    	width: 15px;
+    	background-color: brown;
     }
+    div.puerta{
+      left: 120px;
+      top: 167px;
+      height: 80px;
+      width: 50px;
+      background-color: brown;
+    }
+    .window{
+    	height: 30px;
+    	width: 30px;
+    	background-color: green;
+    }
+    .window__Downleft{
+    	top: 165px;
+    	left: 33px;
+    }
+    .window__Dwnright{
+    	top: 167px;
+    	left: 222px;
+    }
+    .window__topleft{
+    	top: 31px;
+    	left: 33px;
+    }
+    .window__topright{
+    	top: 30px;
+    	left: 222px;
+    	
+    }
+  
 
   </style>
 </head>
+
 <body>
   <div id="h1" class="casa">
+    <div class="ximenera"></div>
     <div class="tejado"></div>
-    <div class="puerta"><div class="pany">º</div></div>
+    <div class="window window__Downleft"></div>
+    <div class="window window__topleft"></div>
+    <div class="window window__topright"></div>
+    <div class="window window__Dwnright"></div>
+    <div class="puerta">
+      <div class="pany">º</div>
+    </div>
   </div>
 </body>
+
 </html>
 <!--
 <div id="h1" class="casa">
