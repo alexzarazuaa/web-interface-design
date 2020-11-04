@@ -13,27 +13,40 @@
     <meta name="twitter:site" content="@alxzarazua" />
     <title>EJERCICIO CSS 10</title>
     <style>
+        :root {
+            --color: black;
+        }
+
         .cuadro {
-            border-style: solid;
-            padding: 4px 10px;
+            padding-top: 8px;
+            padding-left: 2px;
+            padding-right: 2px;
+            position: relative;
+            width: 810px;
+            height: 200px;
+            border: 2px solid var(--color);
 
         }
-        .cuadro__text{
+
+        .cuadro__text {
             position: absolute;
+			left: 100px;
+			top: 130px;
+            color: var(--color);
         }
     </style>
 
 </head>
 
-<body class="cuadro">
+<body>
 
-
-       <h4> 
-           With absolute positioning an element can be placed anywhere on a page.
-           The heading below is placed 100px from the left of the page and 150 px from the top of the page.
-       </h4>
-       <h2 class="cuadro__text">This is heading with an absolute position</h2>
-
+    <section class="cuadro">
+        <h4>
+            With absolute positioning an element can be placed anywhere on a page.
+            The heading below is placed 100px from the left of the page and 150 px from the top of the page.
+        </h4>
+        <h2 class="cuadro__text">This is heading with an absolute position</h2>
+    </section>
 
 
 </body>
