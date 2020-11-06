@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta property="og:title" content="EJERCICIO CSS 10" />
+  <meta name="description" content="Ejercicio para practicar float y clear"/>
+  <meta name="author" content="Alex Zarazua"/>
+  <meta name="language" content="ES">
+  <meta name="twitter:card" content="float y clear html/css" />
+  <meta name="twitter:creator" content="@alxzarazua"/>
+  <meta name="twitter:site" content="@alxzarazua"/>
+  <title>clear _____?</title>
+  <style media="screen">
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      color: #333;
+    }
+
+    section {
+      text-align: center;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 20px
+    }
+
+    .example-container {
+      background-color: #eee;
+      border: .75em solid;
+      padding: .75em;
+      text-align: justify;
+      line-height: normal;
+    }
+
+    .floated-1 {
+      border: solid 10px #ffc129;
+      background-color: rgba(255, 244, 219, .6);
+      padding: 1em;
+    }
+
+    .floated-2 {
+      border: solid 10px #ffc129;
+      background-color: rgba(255, 244, 219, .6);
+      padding: 1em;
+      height: 120px;
+    }
+
+    .example-container__mini {
+      text-align: center;
+    	border: 10px solid yellow;
+      padding: 10px;
+    	padding-top: 15px;
+    	width: 100px;
+    	height: 70px;
+      float: left;
+      clear: both;
+    }
+    .example-container__big{
+      margin: 5px;
+      height: 120px;
+    	padding: 15px;
+      width: 75px;
+    	float: right;
+    	border: 10px solid yellow;
+   
+    }
+
+    .example-container__text{
+      width: 650px;
+    }
+
+    .box1{
+      clear: none;
+
+    }
+    .box2{
+      clear: left;
+    }
+    .box3{
+      clear: both;
+    }
+
+
+  </style>
+</head>
+
+<body>
+  <h2>clear</h2>
+
+
+  <section>
+    <div class="example-container">
+      <div class="example-container__mini">reliquit</div>
+      <div class="example-container__big">ius</div>
+      <div class="example-container__text box1">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</div>
+
+    </div>
+
+  </section>
+
+
+  <section>
+    <div class="example-container">
+      <div class="example-container__mini">reliquit</div>
+      <div class="example-container__big">ius</div>
+      <div class="example-container__text box2">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</div>
+
+    </div>
+  </section>
+  <section>
+    <div class="example-container">
+      <div class="example-container__mini">reliquit</div>
+      <div class="example-container__big">ius</div>
+      <div class="example-container__text box3">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et
+        dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+        commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+        pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
+        laborum.</div>
+    </div>
+  </section>
+
+</body>
+
+</html>
