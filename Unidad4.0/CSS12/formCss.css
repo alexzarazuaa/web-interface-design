@@ -1,0 +1,54 @@
+
+/*HACER COMENTARIOS*/
+/*
+* :root Hace referencia a las variables del color para el input y el hover
+* Y al alineado del boton crear que ha de estar centrado
+* Para el tamaño de la letra del h1 y del boton de crear
+*/
+:root {
+    --hover-color: #ffe4e1;
+    --input-color:#f2bd5a;
+    --center: center;
+    --h1-size:3em;
+    --boton-crear-size:16px;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  input {}
+
+  header {}
+
+  h1,
+  h2 {
+    font-family: Georgia, serif;
+  }
+
+  h1 {
+    font-size: var(--h1-size);
+  }
+
+  fieldset { margin-bottom: 10px;}
+
+  legend { text-transform: uppercase;}
+
+  label {  font-weight: bold;}
+
+  input:focus,
+  select:focus { outline-color: var(--input-color);}
+
+  .boton-crear { font-size: var(--boton-crear-size);  height: 42px;   width: 107px;}
+
+  .inline {}
+
+  .centrado { text-align: var(--center)}
+
+  p.sesion input {}
+
+  p.sesion label {}
+
+  fieldset:hover { background-color: var(--hover-color);}
