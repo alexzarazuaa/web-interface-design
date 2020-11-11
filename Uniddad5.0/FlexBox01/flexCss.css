@@ -1,0 +1,48 @@
+
+/*
+* boxes_box define las reglas para cada una de las tres cajas
+* El span para cada una de las cajitas de los numeros
+* Y en top, center, bottom hace referencia a la primera , segunda y 
+* tercera caja respectivamente
+*/
+
+.boxes{
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.boxes_box{
+    display: flex;
+    margin-bottom: 20px;
+    margin-left: 50px;
+    margin-right: 50px;
+    padding: 10px;
+    background-color:red;
+}
+span{
+    background-color: blue;
+    padding: 10px;
+    margin-right: 10px;
+    border: 2px solid white;
+    color: white;
+    font-size: 35px;
+    font-weight: bold;
+}
+.top{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+}
+.center{
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+}
+.bottom{
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+}
