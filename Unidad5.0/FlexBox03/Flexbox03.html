@@ -19,8 +19,8 @@
   box-sizing: border-box;
 }
 .app {
-  /* display: */
-  /* flex-direction: */
+  display: flex;
+  flex-direction:column;
   min-height: 100vh;
   font-family: sans-serif;
   line-height: 1.4;
@@ -29,7 +29,7 @@ header,
 footer {
   background-color: skyblue;
   height: 5rem;
-  /* flex-shrink: */
+ flex-shrink: 3;
 }
 ul {
   padding: 2em;
@@ -40,11 +40,11 @@ ul li {
 nav,
 aside {
   background-color: #ede;
-  /* flex: */
+  flex: 1 0 20%;
 }
 #main {
-  /* display: */
-  /* flex-grow: */
+  display:flex;
+  flex-grow:2;
 }
 article {
   background-color: #EEE;
