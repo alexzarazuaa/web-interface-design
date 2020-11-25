@@ -1,0 +1,32 @@
+
+
+/*
+        -  grid-gap -->que especifica los canales entre las filas y las columnas de la cuadrícula.
+        -  Dos valores <longitud> 
+        - el primer valor separa las filas y el segundo separa las columnas
+        -  grid-template-columns: 10% 50% 35% 5%; --> define el tamaño para cada columna
+        -  grid-template-rows: repeat(5,20%); -> repite 5 veces la linea con el porcentaje de su altura
+*/
+
+
+ul {
+    width: 72%;
+    display: grid;
+    grid-template-columns: 10% 50% 35% 5%;
+    grid-template-rows: repeat(5,20%);
+    grid-gap: 10px 10px;
+   
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    color: white;
+    font-weight: bold;
+    font-size: 1rem;
+    text-align: center;
+  }
+  li {
+    padding: 1em;
+    background: salmon;
+  }
