@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+  }
+
+  body {
+    background: #f6f3ea;
+  }
+
+  img {
+      width: 100%;
+  }
+
+  ul {
+      display: grid;
+      grid-template-columns: repeat(5,140px);
+      grid-gap: 18px;
+      list-style-type: none;
+    
+  }
+
+    /*
+      * He utilizado la propiedad list-style-none con tal de eliminar
+      * los puntos que salen a la hora de crear una lista con las etiquetas <ul> y <li>.
+      */
