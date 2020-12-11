@@ -1,0 +1,44 @@
+:root {
+    --border-style: 2px solid black;
+    --underlined-color: yellow;
+    --direction-flex:center
+}
+
+
+body{
+    display: flex;
+    justify-content: var(--direction-flex);
+    align-items: var(--direction-flex);
+    margin-top: 220px;
+}
+
+
+section {
+    width: 40%;
+    padding: 2em;
+    border: var(--border-style);
+}
+
+
+ul {
+
+    display: flex;
+    justify-content: var(--direction-flex);
+    align-items: var(--direction-flex);
+    flex-direction: row;
+    list-style: none;
+}
+
+li {
+    margin: 0.5em;
+}
+
+
+/*
+Con la nueva pseudo-clase :target, podemos resaltar los
+vínculos que el visitante ya haya utilizado.--
+*/
+
+h1:target {
+    background-color: var(--underlined-color);
+}

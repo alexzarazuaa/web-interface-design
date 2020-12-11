@@ -1,0 +1,29 @@
+:root{
+    --border-style:solid black 2px;
+    --padding-size:2px;
+    --person-avatar--icon: url('https://ruedastore.com/wp-content/uploads/2019/11/avatar-icon.png');
+}
+
+
+.card{
+    box-sizing: border-box;
+    width: 40%;
+    border:  var(--border-style);
+    padding: var(--padding-size);
+
+}
+.card__info{
+    margin-left: 1em;
+}
+
+.card__info a {
+    text-decoration: none;
+}
+
+
+.card__info a[href^="mailto"] { /*para aplicar un estilo a un elemento cuyo  atributo comience exactamente por dicho valor.*/
+    background: var(--person-avatar--icon) left center no-repeat;
+    background-size: 20px 20px;
+    padding-left: 30px;
+
+}
