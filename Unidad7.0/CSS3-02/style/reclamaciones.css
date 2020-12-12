@@ -22,9 +22,15 @@
     text-decoration: var(--text--decoration);
 }
 
+/* Selecciona cualquier <a> que ha sido visitado */
 .reclamaciones a:visited {
     color: blue;
 }
+
+/*  PSEUDO-ELEMENTO ::after */ 
+/*  crea un pseudo-elemento que es el último hijo del elemento seleccionado. 
+Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad
+*/
 
 .reclamaciones__pdf:after {
     margin-left: 5px;
