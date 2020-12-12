@@ -1,36 +1,47 @@
+
 :root{
-    --pdf-icon: url('https://upload.wikimedia.org/wikipedia/commons/thumb/8/87/PDF_file_icon.svg/1200px-PDF_file_icon.svg.png');
-    --zip-icon: url('https://www.flaticon.com/svg/static/icons/svg/28/28814.svg');
+    --padding--article:20px;
+    --style--border:2px;
+    --text--decoration:none;
+    --general-height:25px;
+    --pdf-icon: url('../img/pdf.png');
+    --zip-icon: url('../img/zip.png');
 }
 
 
-main{
-    box-sizing: border-box;
+
+.reclamaciones {
+    padding: var(--padding--article);
+    border: var(--style--border) solid black;
     width: 30%;
-    border: solid black 2px;
-    padding: 2px;
+    margin: var(--padding--article);
 }
 
-
-a {
-text-decoration: none;
+.reclamaciones a {
+    display: block;
+    text-decoration: var(--text--decoration);
 }
 
+.reclamaciones a:visited {
+    color: blue;
+}
 
-/*  para aplicar un estilo a un elemento cuyo
-    atributo termine exactamente con dicho valor.  
-*/
-
-a[href$=".pdf"] {
-    content: "";
-    font-style: italic;
+.reclamaciones__pdf:after {
+    margin-left: 5px;
     background-image: var(--pdf-icon);
-    background-size: 20px 20px;
+    display: inline-block;
+    background-size: 40px var(--general-height);
+    width: 40px; 
+    height: var(--general-height);
+    content:"";
 }
-a[href$=".zip"] {
-    content: "";
-    font-weight: bold;
+
+.reclamaciones__zip:after {
+    margin-left: 5px;
     background-image: var(--zip-icon);
-    background-size: 20px 20px;
-    
+    display: inline-block;
+    background-size: 30px var(--general-height);
+    width: 30px; 
+    height: var(--general-height);
+    content:"";
 }

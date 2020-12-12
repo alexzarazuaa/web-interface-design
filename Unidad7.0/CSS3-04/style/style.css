@@ -1,0 +1,33 @@
+
+:root{
+    --font-weight:bold;
+    --border-box:2px;
+
+}
+
+
+.lists {
+    width: 15%;
+    margin: 30px 0px 0px 30px;
+    padding: 20px 0px 20px 5px;
+    border: var(--border-box) solid black;
+}
+
+li {
+    margin-bottom: 12px;
+}
+
+.lists--firtsList ul li:nth-child(2) {
+    font-weight: var(--font-weight);
+    background-color: yellow;
+}
+
+.lists--secondList ul li:nth-child(odd) {
+    font-weight: var(--font-weight);
+    background-color: yellow;
+}
+
+.lists--thirdList ul li:nth-child(3n) {
+    font-weight: var(--font-weight);
+    background-color: yellow;
+}
