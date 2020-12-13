@@ -1,0 +1,40 @@
+:root{
+    --container-width:500px;
+    --divBox-width:250px;
+    --border-size:5px;
+    --general-padding:20px;
+    
+}
+
+
+.divBoxSizing {
+    width: var(--container-width);
+    border: var(--border-size) solid #7f7f7f;
+    margin-bottom: var(--general-padding);
+}
+
+.divBoxes {
+    width: var(--divBox-width);
+    border: var(--border-size) solid #ffaa00;
+    padding: var(--general-padding);
+    float: left;
+    box-sizing: border-box;   /* BOX SIZING */
+}
+
+
+/*-------------------------------------*/
+
+
+
+.divContainer {
+    width: var(--container-width);
+    border: var(--border-size) solid #7f7f7f;
+
+}
+
+.divBox {
+    width: var(--divBox-width);
+    border: var(--border-size) solid #ffaa00;
+    padding: var(--general-padding);
+    float: left;
+}
