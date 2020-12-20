@@ -1,0 +1,42 @@
+
+header{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;  
+}
+
+.tipografias{
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center;
+      border: solid 10px black;
+      border-radius: 25px;
+}
+
+.tipografias__verdana{
+      font-family: Verdana;
+      font-size: xx-large;
+      text-shadow: 4px 4px 2px rgb(43, 43, 43);  
+}
+
+.tipografias__st{
+      font-family: Tahoma, Geneva, sans-serif;
+      font-size: x-large;
+      font-style: italic;
+      color: saddlebrown;
+}
+
+
+.tipografias__variant{
+      font-family: Tahoma, Geneva, sans-serif;
+      font-variant: small-caps;
+
+}
+
+.tipografias__weight{
+      font-family: Tahoma, Geneva, sans-serif;
+      font-weight: bolder;
+      font-size-adjust: .50; 
+}
