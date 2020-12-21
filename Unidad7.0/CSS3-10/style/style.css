@@ -1,0 +1,116 @@
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root{
+  --general-direction: center;
+  --shadow-size: 4px;
+}
+
+
+/*------------------------------------*\
+  #TITULO HEADER H1
+\*------------------------------------*/
+
+header h1{
+    display: flex;
+    justify-content: var(--general-direction);
+    align-items: var(--general-direction);
+    align-content: var(--general-direction);
+
+    font-family: Verdana;
+    font-size: xx-large;
+    text-shadow: var(--shadow-size) var(--shadow-size) var(--shadow-size) rgb(43, 43, 43); 
+}
+
+/*------------------------------------*\
+  #GENERAL PARA TODAS LAS CAJAS 
+\*------------------------------------*/
+
+.animaciones__animate {
+    color: #fff;
+    text-align: var(--general-direction);
+    height: 150px;
+    width: 150px;
+    background-color: tomato;
+    margin: 10px;
+    float: left;
+    transition: transform 0.5s ease;
+}
+
+/*------------------------------------*\
+  #ANIMACION ROTATE
+\*------------------------------------*/
+
+.rotate:hover{
+  transform: rotate(45deg);
+}
+
+/*------------------------------------*\
+  #ANIMACION SCALE
+\*------------------------------------*/
+
+.scale:hover{
+  transform: scale(0.7);
+} 
+
+/*------------------------------------*\
+  #ANIMACION SkewX
+\*------------------------------------*/
+
+ .skewX:hover{
+  transform: skew(15deg,15deg);
+}
+
+/*------------------------------------*\
+  #ANIMACION Translate
+\*------------------------------------*/
+
+
+.translate:hover{
+  transform: translate(30%);
+} 
+
+
+/*------------------------------------*\
+  #ANIMACION Matrix
+\*------------------------------------*/
+
+.matrix:hover{
+  transform: matrix(1, 2, -1, 1, 20, 40);
+}
+
+
+/*------------------------------------*\
+  #ANIMACION Rotate3d
+\*------------------------------------*/
+
+.rotate3d:hover{
+  transform: rotate3d(1,0,0,60deg);
+}
+
+/*------------------------------------*\
+  #ANIMACION RotateY
+\*------------------------------------*/
+
+
+.rotateY:hover{
+  transform: rotateY(60deg);
+}
+
+/*------------------------------------*\
+  #ANIMACION RotateZ
+\*------------------------------------*/
+
+.rotateZ:hover{
+  transform: rotateZ(60deg);
+}
+
+/*------------------------------------*\
+  #ANIMACION RotateXYZ
+\*------------------------------------*/
+
+
+.rotateXYZ:hover{
+  transform: rotate3d(1, 1, 1, 45deg);
+}

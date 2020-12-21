@@ -1,24 +1,32 @@
 
+:root{
+      --general-direction: center;
+      --shadow-size: 4px;
+      --border-size: 10px;
+      --border-radius-size: 25px;
+}
+
+
 header{
       display: flex;
-      justify-content: center;
+      justify-content: var(--general-direction);
       flex-direction: column;
-      align-items: center;  
+      align-items: var(--general-direction);  
 }
 
 .tipografias{
       display: flex;
-      justify-content: center;
+      justify-content: var(--general-direction);
       flex-direction: column;
-      align-items: center;
-      border: solid 10px black;
-      border-radius: 25px;
+      align-items: var(--general-direction);
+      border: solid var(--border-size) black;
+      border-radius: var(--border-radius-size);
 }
 
 .tipografias__verdana{
       font-family: Verdana;
       font-size: xx-large;
-      text-shadow: 4px 4px 2px rgb(43, 43, 43);  
+      text-shadow: var(--shadow-size) var(--shadow-size) 2px rgb(43, 43, 43);  
 }
 
 .tipografias__st{
