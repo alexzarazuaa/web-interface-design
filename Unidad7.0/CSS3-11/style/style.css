@@ -1,0 +1,26 @@
+:root {
+    --border-box-hover: 10px solid black;
+    --border-width: 10px;
+    --padding-box:20px;
+    --font-hover-size: 50px;
+    --hover-background-color: chocolate;
+}
+
+
+
+.box {
+    border-style: dotted;
+    border-width: var(--border-width);
+    display: block;
+    width: fit-content;
+    padding-right: var(--padding-box);
+    transition: background-color 0.5s, border 0.5s, font-size 1s;
+}
+
+.box:hover {
+    font-size: var(--font-hover-size);
+    border: var(--border-box-hover);
+    border-radius: 10px;
+    background-color: var(--hover-background-color);
+  
+}
