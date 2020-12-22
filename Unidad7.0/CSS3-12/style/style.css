@@ -1,0 +1,83 @@
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+    --general-direction: center;
+    --shadow-size: 4px;
+    --animation-count: infinite;
+    --animation-direction: alternate;
+    --animation-name: slidein;
+    --animation-text-color: saddlebrown;
+    --general-size-animation:4px;
+}
+
+/*------------------------------------*\
+  #TITULO
+\*------------------------------------*/
+
+header h1 {
+    display: flex;
+    justify-content: var(--general-direction);
+    align-items: var(--general-direction);
+    align-content: var(--general-direction);
+    text-shadow: var(--shadow-size) var(--shadow-size) 2px rgb(43, 43, 43);
+}
+
+/*------------------------------------*\
+  #TEXTO ANIMADO
+\*------------------------------------*/
+
+.animaciones__texto--titulo {
+    /* animation-duration: 3s;
+    animation-name: slidein;
+    animation-iteration-count: infinite;
+    animation-direction: alternate; */
+    font-family: Tahoma, Geneva, sans-serif;
+    font-size: x-large;
+    font-style: italic;
+    color: var(--animation-text-color);
+    animation: 3s var(--animation-count) var(--animation-direction) var(--animation-name);
+}
+
+@keyframes slidein {
+    from {
+        margin-left: 100%;
+        width: 300%
+    }
+    to {
+        margin-left: 0%;
+        width: 100%;
+    }
+}
+
+/*------------------------------------*\
+  #IMAGEN ANIMADA
+\*------------------------------------*/
+
+.animaciones__section1__img {
+    width: 400px;
+    height: 300px;
+    margin: 15px;
+    border: 19px solid #eee;
+    transition: ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+     color-stop(.7, transparent), to(rgba(0, 0, 0, 0.1)));
+        
+}
+
+.animaciones__section1__img:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: var(--general-size-animation) var(--general-size-animation) 15px 15px #ec731e;
+    -webkit-box-shadow: var(--general-size-animation) var(--general-size-animation) 15px 15px #ec731e;
+    opacity: 1;
+    -webkit-box-reflect: below var(--general-size-animation) -webkit-gradient(linear, left top, left bottom, from(transparent), 
+    color-stop(.7, transparent), to(rgba(0, 0, 0, 0.4)));
+    -webkit-box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+    box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+}
