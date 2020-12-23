@@ -1,0 +1,55 @@
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+:root {
+    --path-polygon: polygon(100% 0, 0 100%, 0 0);
+    --border: solid 1px red;
+    --inset-percent: 10%;
+    --adjust-size: fit-content;
+}
+
+/*------------------------------------*\
+  #SECTION
+\*------------------------------------*/
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    flex-direction: row;
+}
+
+/*------------------------------------*\
+  #ARTICLE
+  * fit-content() ajusta un tamaño dado a 
+  * un tamaño disponible de acuerdo a la fórmula: 
+  * min(maximum size, max(minimum size, argument)).
+\*------------------------------------*/
+
+article {
+    width: var(--adjust-size);
+    height: var(--adjust-size);
+    border: var(--border);
+    margin: 10px;
+}
+
+/*------------------------------------*\
+  #PROPIEDADES CLIP PATH IN THE IMG ARTICLES
+\*------------------------------------*/
+
+.clip-css {
+    clip-path: var(--path-polygon);
+}
+
+.clip-css2 {
+    clip-path: circle(50%)
+}
+
+.clip-css3 {
+    clip-path: ellipse(27% 40%)
+}
+
+.clip-css4 {
+    clip-path: inset(var(--inset-percent) var(--inset-percent) var(--inset-percent) var(--inset-percent) round 15px)
+}
