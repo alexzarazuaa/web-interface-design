@@ -1,0 +1,29 @@
+
+
+/*------------------------------------*\
+  #SECTION
+\*------------------------------------*/
+
+section {
+    display: flex;
+    justify-content: center;
+    margin-top: 55px;
+    flex-direction: row;
+}
+
+article{
+    display:inline-block;
+    margin:20px;
+  }
+  .mascara-0{
+   
+  }
+  .mascara-1{
+   
+  }
+  .mascara-2{
+   }
+  .mascara-3{
+  }
+  .mascara-4{
+  }
