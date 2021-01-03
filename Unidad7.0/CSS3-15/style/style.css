@@ -1,0 +1,135 @@
+
+/*------------------------------------*\
+  #VARIABLES
+\*------------------------------------*/
+
+
+:root {
+    --width-img: 500px;
+    --justify-center: center;
+    --filter-opacity: 85%;
+    --filter-shadow:10px 10px 15px red;
+    --filter-size:5px;
+    --border-box-hover: 10px solid black;
+    --border-width: 10px;
+    --padding-box:20px;
+    --font-hover-size: 50px;
+    --hover-background-color: chocolate;
+}
+
+/*------------------------------------*\
+  #TITULO
+\*------------------------------------*/
+
+h2 {
+    display: flex;
+    justify-content: var(--justify-center);
+    align-content: var(--justify-center);
+}
+
+/*------------------------------------*\
+  #TAMAÑO IMAGEN
+\*------------------------------------*/
+
+img {
+    width: var(--width-img);
+}
+
+/*------------------------------------*\
+  #FILTROS Y ANIMACIONES
+\*------------------------------------*/
+
+@keyframes blur {
+    0% {
+        filter: blur(0px);
+    }
+    25% {
+        filter: blur(var(--filter-size));
+    }
+    50% {
+        filter: blur(10px);
+    }
+    75% {
+        filter: blur(var(--filter-size));
+    }
+    100% {
+        filter: blur(0px);
+    }
+}
+
+
+.f1 {
+    filter: opacity(var(--filter-opacity)) invert(15%)
+}
+
+.f2 {
+    filter: saturate(35%);
+    animation: blur 2s linear 0s infinite
+}
+
+
+
+.f3{
+    filter: brightness(200%);
+    transition: ease;
+    -webkit-transition: all 0.5s ease;
+    -moz-transition: all 0.5s ease;
+    -o-transition: all 0.5s ease;
+    -webkit-box-reflect: below 0px -webkit-gradient(linear, left top, left bottom, from(transparent),
+     color-stop(.7, transparent), to(rgba(0, 0, 0, 0.1)));
+}
+
+.f3:hover {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    box-shadow: var(--general-size-animation) var(--general-size-animation) 15px 15px #ec731e;
+    -webkit-box-shadow: var(--general-size-animation) var(--general-size-animation) 15px 15px #ec731e;
+    opacity: 1;
+    -webkit-box-reflect: below var(--general-size-animation) -webkit-gradient(linear, left top, left bottom, from(transparent), 
+    color-stop(.7, transparent), to(rgba(0, 0, 0, 0.4)));
+    -webkit-box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+    -moz-box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+    box-shadow: var(--general-size-animation) var(--general-size-animation) 24px rgba(255, 255, 255, 0.8);
+}
+
+.f4{
+    filter: sepia(100%);
+    transition: background-color 0.5s, border 0.5s, font-size 1s;
+
+    display: block;
+    width: fit-content;
+    padding-right: var(--padding-box);
+
+}
+
+.f4:hover {
+    font-size: var(--font-hover-size);
+    border: var(--border-box-hover);
+    border-radius: 10px;
+    background-color: var(--hover-background-color);
+  
+}
+
+.f5{
+    filter: hue-rotate(90deg);
+}
+
+.f6{
+    filter: sepia(70%) hue-rotate(90deg)
+}
+
+.f7{
+    filter:grayscale(90%);
+}
+
+.f8{
+    filter:grayscale(90%) blur(15px);
+}
+
+.f9{
+    filter: drop-shadow(var(--filter-shadow));
+}
+
+.f10{
+    filter: opacity(25%) drop-shadow(var(--filter-shadow));
+}
