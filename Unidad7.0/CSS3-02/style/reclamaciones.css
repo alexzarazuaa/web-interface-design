@@ -27,12 +27,8 @@
     color: blue;
 }
 
-/*  PSEUDO-ELEMENTO ::after */ 
-/*  crea un pseudo-elemento que es el último hijo del elemento seleccionado. 
-Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad
-*/
-
-.reclamaciones__pdf::after {
+/* Selectores de atributo */
+.reclamaciones a[class="reclamaciones__pdf"]::after {
     margin-left: 5px;
     background-image: var(--pdf-icon);
     display: inline-block;
@@ -42,7 +38,7 @@ Es comunmente usado para añadir contenido cosmético a un elemento con la propi
     content:"";
 }
 
-.reclamaciones__zip:last-child::after{
+.reclamaciones a[class="reclamaciones__zip"]::after {
     margin-left: 5px;
     background-image: var(--zip-icon);
     display: inline-block;
