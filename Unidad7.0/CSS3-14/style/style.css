@@ -1,29 +1,32 @@
-
-
 /*------------------------------------*\
   #SECTION
 \*------------------------------------*/
 
 section {
-    display: flex;
-    justify-content: center;
-    margin-top: 55px;
-    flex-direction: row;
+  display: flex;
+  justify-content: center;
+  margin-top: 55px;
+  flex-direction: row;
 }
 
-article{
-    display:inline-block;
-    margin:20px;
-  }
-  .mascara-0{
-   
-  }
-  .mascara-1{
-   
-  }
-  .mascara-2{
-   }
-  .mascara-3{
-  }
-  .mascara-4{
-  }
+article {
+  display: inline-block;
+  margin: 20px;
+}
+
+.mascara-0 {
+    mask-image: url("./img/homer-simpson.svg");
+    mask-repeat: no-repeat;
+    mask-size: 80%;
+    -webkit-mask-image: url("homer-simpson.svg");
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-size: 80%;
+}
+
+.mascara-1 {}
+
+.mascara-2 {}
+
+.mascara-3 {}
+
+.mascara-4 {}

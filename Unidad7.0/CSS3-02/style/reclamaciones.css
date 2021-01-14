@@ -32,7 +32,7 @@
 Es comunmente usado para añadir contenido cosmético a un elemento con la propiedad
 */
 
-.reclamaciones__pdf:after {
+.reclamaciones__pdf::after {
     margin-left: 5px;
     background-image: var(--pdf-icon);
     display: inline-block;
@@ -42,7 +42,7 @@ Es comunmente usado para añadir contenido cosmético a un elemento con la propi
     content:"";
 }
 
-.reclamaciones__zip:after {
+.reclamaciones__zip:last-child::after{
     margin-left: 5px;
     background-image: var(--zip-icon);
     display: inline-block;
