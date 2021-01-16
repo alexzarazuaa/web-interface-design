@@ -5,7 +5,7 @@
 \*------------------------------------*/
 
 :root{
-  --image-mask: url('./img/homer-simpson.svg');
+  --image-mask: url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
   --general-size:100%;
 }
 
