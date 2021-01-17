@@ -30,36 +30,36 @@ article{
 .mascara-0 {
   height: var(--general-size);
   width: var(--general-size);
-  -webkit-mask-image:var(--image-mask);
-  mask-image:var(--image-mask);
+  -webkit-mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
+  mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
 }
 
 .mascara-1 {
   width: var(--general-size);
   object-fit: cover;
-  -webkit-mask-image:var(--image-mask);
+  -webkit-mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
   -webkit-mask-size:20px 20px;
   -webkit-mask-position: 0 0, 0 10px, 10px -10px, -10px 0px;
-  mask-image:var(--image-mask);
+  mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
 }
 
 .mascara-2 {
   padding: 10px;
-  -webkit-mask-image: var(--image-mask),var(--image-mask);
+  -webkit-mask-image: url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg),url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
   -webkit-mask-composite: xor, source-over;
 }
 
 .mascara-3 {
   height: var(--general-size);
   width: var(--general-size);
-  -webkit-mask-image:var(--image-mask);
-  -webkit-mask:var(--image-mask) bottom / 75% repeat repeat;
+  -webkit-mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
+  -webkit-mask:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg) bottom / 75% repeat repeat;
 }
 
 .mascara-4 {
   height: var(--general-size);
   width: var(--general-size);
-  -webkit-mask-image:var(--image-mask);
-  -webkit-mask:var(--image-mask) top / 180px no-repeat, 
-  var(--image-mask) bottom / 250px no-repeat;
+  -webkit-mask-image:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
+  -webkit-mask:url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg) top / 180px no-repeat, 
+  url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg) bottom / 250px no-repeat;
 }
