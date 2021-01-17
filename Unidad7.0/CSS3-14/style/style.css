@@ -1,5 +1,3 @@
-
-
 /*------------------------------------*\
   #VARIABLES
 \*------------------------------------*/
@@ -11,21 +9,19 @@
 
 
 /*------------------------------------*\
-  #SECTION
+  #ARTICLE
 \*------------------------------------*/
 
-section {
-  display: flex;
-  justify-content: center;
-  margin-top: 55px;
-  flex-direction: row;
-}
 
 article{
   display: inline-block;
   margin: 30px;
   max-width: var(--general-size);
 }
+
+/*------------------------------------*\
+  #MASCARAS
+\*------------------------------------*/
 
 .mascara-0 {
   height: var(--general-size);
