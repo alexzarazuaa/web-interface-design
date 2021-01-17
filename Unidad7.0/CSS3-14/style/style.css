@@ -4,6 +4,7 @@
 
 :root{
   --image-mask: url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
+  --image2-mask2: url(https://raw.githubusercontent.com/alexzarazuaa/web-interface-design/cf86aed8ecc7e57a360b058886c14650aef1382d/Unidad7.0/CSS3-14/img/homer-simpson.svg);
   --general-size:100%;
 }
 
@@ -55,7 +56,7 @@ article{
 .mascara-4 {
   height: var(--general-size);
   width: var(--general-size);
-  -webkit-mask-image:var(--image-mask);
-  -webkit-mask:var(--image-mask) top / 180px no-repeat, 
-  var(--image-mask) bottom / 250px no-repeat;
+  -webkit-mask-image:var(--image2-mask2);
+  -webkit-mask:var(--image2-mask2) top / 180px no-repeat, 
+  var(--image2-mask2) bottom / 250px no-repeat;
 }
