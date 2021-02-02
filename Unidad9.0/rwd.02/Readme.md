@@ -15,7 +15,7 @@
 
 * [Link al GhPages]()
 
-* [Link al html](./Layout_Shifer/index.html)
+* [Link al html](./Layout_Shifter/index.html)
 
 
 ## Off canvas
@@ -26,6 +26,6 @@
 * Y medida que se ensancha la pantalla, el posicionamiento fuera de esta se elimina de los elementos y estos se muestran dentro de la ventana de visualización visible.
 
 
-* [Link al GhPages]()
+* [Link al GhPages](https://alexzarazuaa.github.io/web-interface-design/Unidad9.0/rwd.02/OffCanvas/index.html)
 
 * [Link al html](./OffCanvas/index.html)
