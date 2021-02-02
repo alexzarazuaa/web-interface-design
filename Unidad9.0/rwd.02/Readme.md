@@ -6,7 +6,7 @@
 * Una vez que el ancho de la pantalla alcanza los 600 píxeles, el div de contenido principal permanece en width: 100%, mientras que el div del otro contenido,el del secundario se muestra como dos columnas debajo del div del contenido principal.
 * Pero  al superarse los 800 píxeles, el div del contenedor adopta ancho fijo y se centra en la pantalla.
 
-* [Link al GhPages](https://alexzarazuaa.github.io/web-interface-design/Unidad9.0/rwd.02/index.html)
+* [Link al GhPages](https://alexzarazuaa.github.io/web-interface-design/Unidad9.0/rwd.02/Mostly_fluid/index.html)
 
 * [Link al html](./Mostly_fluid/index.html)
 
