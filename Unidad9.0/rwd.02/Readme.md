@@ -13,7 +13,7 @@
 ## Layout shifter
 * Cuando la pantalla sea más pequeña, el contenido se apila verticalmente, pero cambia considerablemente a medida que se agranda la pantalla, con un div a la izquierda y dos div apilados a la derecha.
 
-* [Link al GhPages]()
+* [Link al GhPages](https://alexzarazuaa.github.io/web-interface-design/Unidad9.0/rwd.02/Layout_Shifter/index.html)
 
 * [Link al html](./Layout_Shifter/index.html)
 
