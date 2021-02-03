@@ -17,7 +17,7 @@ body {
     float: right;
     width: 25%;
   }
-  /*@media screen and ( ) {
+  @media screen and (min-width: 420px) and (max-width: 900px){
     .col1 {
       float: left;
       width: 55%;
@@ -33,11 +33,12 @@ body {
       width: 100%;
       clear: both;
     }
-  }*/
-  /*@media screen and ( ) {
+  }
+  @media screen and ( min-width:450px) and (max-width:550px) {
     .col1, .col2, .col3 {
       float: none;
       width: 100%;
       margin: 0;
     }
-  }*/
+  }
+
