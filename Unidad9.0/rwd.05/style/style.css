@@ -1,0 +1,54 @@
+.container {
+    display: grid;
+    grid-template-areas: 
+    'header header  header  header '
+     'nav main main aside'
+     'footer footer footer footer';
+     grid-template-rows: 0.5fr 100% 0.5fr;
+     grid-template-columns: 0.5fr 5fr 0.5fr;
+    height: 70vh;
+}
+
+header {
+    grid-area: header;
+    justify-self: center;
+    display: grid;
+    grid-template-areas: "text img";
+}
+
+header img {
+    grid-area: img;
+    width: 100px;
+}
+
+header h4 {
+    grid-area: text;
+}
+
+main {
+    background-color: peru;
+    grid-area: main;
+}
+
+nav {
+    background-color: cornflowerblue;
+    grid-area: nav;
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+aside {
+    background-color: slategrey;
+    grid-area: aside;
+    width: 150px;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+footer {
+    background-color: skyblue;
+    grid-area: footer;
+}
