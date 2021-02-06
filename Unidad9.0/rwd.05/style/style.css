@@ -1,54 +1,121 @@
+
 .container {
     display: grid;
     grid-template-areas: 
-    'header header  header  header '
+    'header header header  header '
      'nav main main aside'
-     'footer footer footer footer';
-     grid-template-rows: 0.5fr 100% 0.5fr;
-     grid-template-columns: 0.5fr 5fr 0.5fr;
-    height: 70vh;
+     'footer footer  footer footer ';
+     grid-gap: 5px;
+     grid-template-rows: 1fr 100% 1fr;
+     grid-template-columns: 1fr 5fr 1fr;
+     
 }
 
+body {
+	background-color: chocolate;
+}
+
+
 header {
-    grid-area: header;
-    justify-self: center;
-    display: grid;
-    grid-template-areas: "text img";
+	grid-area: header;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+	background-color: skyblue;
 }
 
 header img {
-    grid-area: img;
     width: 100px;
+    height: 100px;
 }
 
 header h4 {
-    grid-area: text;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 main {
     background-color: peru;
     grid-area: main;
+
+}
+
+nav a {
+    display: block;
+	margin-bottom: 10px;
 }
 
 nav {
-    background-color: cornflowerblue;
+	background-color: slategrey;
     grid-area: nav;
-    width: 150px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
+
 }
+
 
 aside {
     background-color: slategrey;
     grid-area: aside;
-    width: 150px;
-    display: flex;
-    justify-content: flex-start;
-    flex-direction: column;
 }
 
 footer {
-    background-color: skyblue;
     grid-area: footer;
+    background-color: skyblue;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	align-items: center;
+	font-weight: bold;
+}
+
+
+@media (max-width: 760px) {
+	body {
+		background-color: white;
+	}
+
+	.container {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+	  	grid-template-rows: 80px 50px 500px 50px 50px;
+	  	grid-gap: 10px;
+	  	grid-template-areas: 
+	    "header header"
+	    "nav nav"
+	    "main main"
+	    "aside aside"
+	    "footer footer";
+	}
+
+	header {
+		text-align: left;
+	}
+
+	img {
+		display: none;
+	}
+
+	nav a {
+		display: inline;
+	}
+
+	nav {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-around;
+		align-items: center;
+	}
+
+	nav a:hover {
+		background-color: chartreuse;
+	}
+
+	aside {
+		display: flex;
+		align-items: center;
+	}
+
+	footer {
+		font-weight: bolder;
+	}
 }
