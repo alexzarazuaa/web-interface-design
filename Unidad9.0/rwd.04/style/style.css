@@ -16,7 +16,7 @@ body {
 }
 
 .main-nav {
-
+/**/
 }
 
 .nav-links,
@@ -28,6 +28,7 @@ body {
 .main-nav li {
   text-align: center;
   margin: 15px auto;
+  
 }
 
 .logo {
@@ -97,6 +98,7 @@ img{
   .main-nav li {
     list-style-type: none;
     margin: 0;
+    display: none;
   }
 
   .nav-links {
@@ -123,7 +125,7 @@ img{
     justify-content: space-between;
   }
   .navbar-toggle {
-    display: none;
+    display: flex;
   }
   #chkToggle:checked + ul.main-nav {
     display: flex;
@@ -141,6 +143,7 @@ img{
   .main-nav li {
     list-style-type: none;
     margin: 0;
+    display: none;
   }
 
   .nav-links {
@@ -184,6 +187,7 @@ img{
   .main-nav li {
     list-style-type: none;
     margin: 0;
+    display: flex;
   }
 
   .nav-links {
