@@ -12,19 +12,25 @@
   <meta name="twitter:card" content="web responsive,Picture RWD06" />
   <meta name="twitter:creator" content="@alxzarazua" />
   <meta name="twitter:site" content="@alxzarazua" />
-  <!-- <link rel='stylesheet' href='style/style.css' media="screen"> -->
-  <title>Picture RWD06</title>
+  <title>PictureRWD06</title>
 </head>
 
 <body>
 
 
-    <img src="./img/rwd-kitten-large.png" añt="img" height="100px" />
+  <section>
 
-    <img src="./img/rwd-kitten-medium.png" añt="img" height="100px" />
+    <article>
+      <picture>
+        <source srcset="./img/rwd-kitten-large.png" media="(min-width: 1000px)">
+        <source srcset="./img/rwd-kitten-medium.png" media="(min-width: 650px)">
+        <source srcset="./img/rwd-kitten-small.png" media="(min-width: 0px)">
+        <img alt="img" src="./img/cat.png" />
+      </picture>
+    </article>
 
-    <img src="./img/rwd-kitten-small.png" añt="img" height="100px" />
+  </section>
 
 </body>
 
-</html>
+</html> 
