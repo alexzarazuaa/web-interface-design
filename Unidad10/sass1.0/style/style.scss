@@ -1,0 +1,25 @@
+$primero_destacado: #ff8000;
+$segundo_destacado: #2e5f64;
+
+.primero .destacado {
+    color: $primero_destacado;
+    font-size: 1.6rem;
+    text-align: center;
+    padding: 6px;
+  }
+  .segundo .destacado {
+    color: $segundo_destacado;
+    font-size: 1.4rem;
+    padding: 5px;
+    text-decoration: underline;
+  }
+
+  p:not(.destacado)::first-line {
+    font-style: italic;
+  }
+  div {
+    padding: 20px;
+  }
+  div .parrafos {
+    text-align: right;
+  }
