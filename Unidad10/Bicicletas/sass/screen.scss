@@ -1,0 +1,85 @@
+
+// VARIABLES
+
+$text_color: #eee;
+$text_color_hover: #fff;
+$background_color:#666;
+$colo_hover_lits:#888;
+
+
+// MIXINS
+
+    // COLORES  DEL TEXTO Y DEL FONDO Y HOVER
+
+@mixin color_fondo_y_color_text {
+    color: $text_color;
+    background-color: $background_color;
+}
+
+@mixin color_fondo_y_color_text-hover{
+    color: $text_color_hover;
+    background-color: $colo_hover_lits;
+}
+
+    // BOX-SIZING
+
+@mixin box-sizing_box ($size) {
+    box-sizing: $size;
+}
+
+    // TRANSICIONES Y ANIMACIONES
+
+@mixin transtions($property, $duration, $timing: linear) {
+    transition-property: $property;
+    transition-duration: $duration;
+    transition-timing-function: $timing;
+}
+
+@mixin animations($name, $duration, $timing: linear) {
+    animation-name: $name;
+    animation-duration: $duration;
+    animation-timing-function: $timing;
+}
+
+
+// CLASSES FROM RESULT CSS
+
+header {
+    padding: 12px 30px;
+    font-size: 1.8em;
+    color: #444;
+    background-color: $text_color;
+    font-weight: bold;
+    text-shadow: 1px 1px 2px #aaa;
+    font-family: Georgia, "Times New Roman", Times, serif;
+  }
+
+  footer {
+    @include color_fondo_y_color_text();
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    @include box-sizing_box (border_box);
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    padding: 5px;
+  }
+
+
+
+  @keyframes iluminar {
+    from {
+      background-color: $background_color;
+      color: $text_color;
+    }
+    to {
+      background-color: $colo_hover_lits;
+      color: $text_color_hover;
+    }
+}
+
+
+
+  // IMPORT THE _menu.scss file
+
+  @import "menu"
