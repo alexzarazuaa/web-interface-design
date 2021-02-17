@@ -1,0 +1,69 @@
+%button-block {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 5px 10px;
+  border-radius: 5px;
+  border: 1px solid transparent;
+  cursor: pointer;
+}
+
+%input-block {
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 5px;
+  padding: 5px 10px;
+  border: 1px solid #bbb;
+}
+
+//div contenido
+div {
+  &.contenido {
+    padding: 30px 20px;
+    @include responsive("medium") {
+      padding: 10px 20px;
+    }
+  }
+  &.col-right {
+    @include box-sizing_box(border-box);
+    margin-left: 30%;
+    width: 70%;
+    padding: 10px;
+    h1 {
+      color: $textColor;
+      font-size: 1.6em;
+    }
+    @include responsive("small") {
+      margin-left: 0;
+      width: 100%;
+    }
+
+    .button-action {
+      background-color: $colorBack;
+      color: white;
+      &:hover {
+        background-color: lighten($colorBack, 20%);
+      }
+    }
+  }
+  &.col-left {
+    @include box-sizing_box(border-box);
+    width: 30%;
+    float: left;
+    padding: 10px;
+
+    .login {
+      input {
+        @extend %input-block;
+      }
+      button {
+        @extend %button-block;
+      }
+    }
+    @include responsive("medium") {
+      float: none;
+      width: 100%;
+    }
+  }
+}
+
+@import "mixin";
