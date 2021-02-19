@@ -1,11 +1,10 @@
-//ICONS 
+//ICONS
 $icons: (
   (icon-menu, "../images/menu.png", 0px, -90px, 30px, 39px),
   (icon-news, "../images/news.png", 0px, -90px, 30px, 39px),
   (icon-money, "../images/money.png", +5px, +5px, 60px, 60px),
   (icon-contact, "../images/contact.png", 5px, -90px, 30px, 39px)
 );
-
 
 %button-block {
   box-sizing: border-box;
@@ -25,6 +24,7 @@ $icons: (
 }
 
 //div contenido
+
 div {
   &.contenido {
     padding: 30px 20px;
@@ -84,7 +84,6 @@ div {
       width: 100%;
     }
   }
-  
 }
 
 i {
