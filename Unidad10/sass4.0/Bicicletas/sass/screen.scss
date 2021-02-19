@@ -1,0 +1,64 @@
+@charset "UTF-8";
+/*!  Force output  ♫ */
+
+@import "mixin";
+// VARIABLES
+
+$text_color: #eee;
+$colorTextHover: lighter($text_color, 10%);
+$colorBack: #15a;
+$colorBackHover: lighter($colorBack, 10%);
+$textColor: darken($colorBack, 10%);
+//THEME
+$theme: "dark";
+
+
+@if $theme == "dark" {
+  $colorBack: #138;
+} @else if $theme == "light" {
+  $colorBack: #ddf;
+  $text_color: #138;
+}
+
+// CLASSES FROM RESULT CSS
+
+@keyframes iluminar {
+  from {
+    background-color: $colorBack;
+    color: $text_color;
+  }
+  to {
+    background-color: $colorBackHover;
+    color: $colorTextHover;
+  }
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+}
+
+header {
+  padding: 12px 30px;
+  font-size: 1.8em;
+  color: #444;
+  background-color: $text_color;
+  font-weight: bold;
+  text-shadow: 1px 1px 2px #aaa;
+  font-family: Georgia, "Times New Roman", Times, serif;
+}
+footer {
+  @include color_fondo_y_color_text();
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  @include box-sizing_box(border_box);
+  position: fixed;
+  width: 100%;
+  bottom: 0px;
+  padding: 5px;
+}
+
+// IMPORTS
+
+@import "menu";
+@import "contenido";

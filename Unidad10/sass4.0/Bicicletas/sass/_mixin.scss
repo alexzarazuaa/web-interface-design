@@ -1,0 +1,50 @@
+// MIXINS
+
+// COLORES  DEL TEXTO Y DEL FONDO Y HOVER
+
+@mixin color_fondo_y_color_text {
+  color: $text_color;
+  background-color: $colorBack;
+}
+
+@mixin color_fondo_y_color_text-hover {
+  color: $colorTextHover;
+  background-color: $colorBackHover;
+}
+
+// BOX-SIZING
+
+@mixin box-sizing_box($size) {
+  box-sizing: $size;
+}
+
+
+// RESPONSIVE
+
+@mixin responsive($size) {
+  @if $size == "medium" {
+    @media (max-width: 1024px) {
+      @content;
+    }
+  } @else if $size == "small" {
+    @media (max-width: 800px) {
+      @content;
+    }
+  }
+}
+
+
+// TRANSICIONES Y ANIMACIONES
+
+@mixin transtions($property, $duration, $timing: linear) {
+  transition-property: $property;
+  transition-duration: $duration;
+  transition-timing-function: $timing;
+}
+
+@mixin animations($name, $duration, $timing: linear) {
+  animation-name: $name;
+  animation-duration: $duration;
+  animation-timing-function: $timing;
+}
+
